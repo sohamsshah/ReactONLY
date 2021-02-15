@@ -17,7 +17,11 @@ export default function AlphaNumericPassword() {
     <div className="App">
       <h1> Password Matcher </h1>
       <div>
-        <input className="password" placeholder="Enter Password"></input>
+        <input
+          type="password"
+          className="password"
+          placeholder="Enter Password"
+        ></input>
       </div>
       <button onClick={checkAlphaNumeric} className="check">
         Check
