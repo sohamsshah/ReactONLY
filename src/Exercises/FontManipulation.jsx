@@ -9,8 +9,8 @@ const fontDictionary = {
   Anton: "Anton, sans-serif"
 };
 
-export default function DesignerTool() {
-  const [size, setSize] = useState(10);
+export default function FontManipulation() {
+  const [size, setSize] = useState(8);
   const [font, setFont] = useState("Bree Serif");
 
   function alterSize(size) {
@@ -18,20 +18,24 @@ export default function DesignerTool() {
   }
 
   function incrementSize() {
-    if (size >= 10 && size < 100) {
-      setSize(size + 2);
+    if (size + 8 < 100) {
+      setSize(size + 8);
       alterSize(size);
     }
   }
   function decrementSize() {
-    if (size > 10 && size <= 100) {
-      setSize(size - 2);
+    if (size - 8 > 8) {
+      setSize(size - 8);
       alterSize(size);
     }
   }
 
   function alterFont() {
     setFont(document.getElementById("fonts").value);
+  }
+
+  function transitionAnimation() {
+    document.querySelector(".text").style.transition = `fade 0.8s`;
   }
 
   return (
@@ -51,6 +55,7 @@ export default function DesignerTool() {
       <h1
         style={{ fontSize: `${size}px`, fontFamily: fontDictionary[font] }}
         className="text"
+        onChange={transitionAnimation}
       >
         {" "}
         Soham
