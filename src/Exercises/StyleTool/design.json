@@ -2,8 +2,9 @@
   {
     "primaryColor": "#02343F",
     "secondaryColor": "#F0EDCC",
-    "headingFont": "",
-    "paragraphFont": ""
+    "headingFont": "'Lora', serif",
+    "paragraphFont": "'Merriweather', serif",
+    "importURL": "@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap');"
   },
   {
     "primaryColor": "#331B3F",

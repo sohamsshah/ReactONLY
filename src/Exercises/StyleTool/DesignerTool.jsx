@@ -11,7 +11,11 @@ export default function DesignerTool() {
   }
 
   function prevDesignHandler() {
-    setDesign((design + 1) % designs.length);
+    if (design - 1 === -1) {
+      setDesign(designs.length - 1);
+    } else {
+      setDesign(design - 1);
+    }
   }
   return (
     <div className="App">
@@ -23,9 +27,42 @@ export default function DesignerTool() {
       <PairCards
         primaryColor={`${designs[design].primaryColor}`}
         secondaryColor={`${designs[design].secondaryColor}`}
+        headingFont={`${designs[design].headingFont}`}
+        paragraphFont={`${designs[design].paragraphFont}`}
+        importURL={`${designs[design].importURL}`}
       />
-      <button onClick={prevDesignHandler}>Prev</button>
-      <button onClick={nextDesignHandler}> Next </button>
+      <button
+        style={{
+          backgroundColor: `${designs[design].primaryColor}`,
+          color: `${designs[design].secondaryColor}`,
+          padding: "0.5rem",
+          fontSize: "1.2rem",
+          borderRadius: "5%",
+          marginRight: "1rem",
+          border: "fade 1px",
+          borderStyle: "none",
+          boxShadow: "2px"
+        }}
+        onClick={prevDesignHandler}
+      >
+        Prev
+      </button>
+      <button
+        style={{
+          backgroundColor: `${designs[design].secondaryColor}`,
+          color: `${designs[design].primaryColor}`,
+          padding: "0.5rem",
+          fontSize: "1.2rem",
+          borderRadius: "5%",
+          marginRight: "1rem",
+          borderStyle: "none",
+          boxShadow: "2px"
+        }}
+        onClick={nextDesignHandler}
+      >
+        {" "}
+        Next{" "}
+      </button>
     </div>
   );
 }
