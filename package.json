@@ -1,7 +1,7 @@
 {
-  "name": "react-practice",
+  "name": "reactonly",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Scripts for quick concept recap.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

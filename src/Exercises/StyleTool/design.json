@@ -1,0 +1,32 @@
+[
+  {
+    "primaryColor": "#02343F",
+    "secondaryColor": "#F0EDCC",
+    "headingFont": "",
+    "paragraphFont": ""
+  },
+  {
+    "primaryColor": "#331B3F",
+    "secondaryColor": "#ACC7B4",
+    "headingFont": "",
+    "paragraphFont": ""
+  },
+  {
+    "primaryColor": "#0A174E",
+    "secondaryColor": "#F5D042",
+    "headingFont": "",
+    "paragraphFont": ""
+  },
+  {
+    "primaryColor": "#07553B",
+    "secondaryColor": "#CED46A",
+    "headingFont": "",
+    "paragraphFont": ""
+  },
+  {
+    "primaryColor": "#50586C",
+    "secondaryColor": "#DCE2F0",
+    "headingFont": "",
+    "paragraphFont": ""
+  }
+]

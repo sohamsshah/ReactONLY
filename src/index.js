@@ -8,11 +8,12 @@ import AlphaNumericPassword from "./Exercises/AlphaNumericPassword";
 import ShowPassword from "./Exercises/ShowPassword";
 import DisableSubmit from "./Exercises/DisableSubmit";
 import FontManipulation from "./Exercises/FontManipulation";
+import DesignerTool from "./Exercises/StyleTool/DesignerTool";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <FontManipulation />
+    <DesignerTool />
   </StrictMode>,
   rootElement
 );
