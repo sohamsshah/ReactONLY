@@ -20,9 +20,32 @@ export default function DesignerTool() {
   return (
     <div className="App">
       <div>
-        {console.log(design)}
-        <h1>Style Explorer</h1>
-        <p>Swiftly choose best designs for your project </p>
+        <h1
+          style={{
+            fontFamily: "Domine, serif",
+            color: "#383e56",
+            fontSize: "3rem",
+            fontWeight: "800",
+            textDecoration: "underline"
+          }}
+        >
+          2 Color Design
+        </h1>
+        <p
+          style={{
+            fontFamily: "Domine, serif",
+            color: "#fb743e",
+            fontSize: "1.5rem",
+            fontWeight: "800"
+          }}
+        >
+          Swiftly choose best design combinations for your next web development
+          project!{" "}
+        </p>
+        <p style={{ color: "#383e56", fontWeight: "600" }}>
+          {" "}
+          Copy styles by click of a button!{" "}
+        </p>
       </div>
       <PairCards
         primaryColor={`${designs[design].primaryColor}`}

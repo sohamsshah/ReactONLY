@@ -40,6 +40,7 @@ export default function PairCards({
           onClick={() => copyToClipboard(primaryColor)}
           src="https://img.icons8.com/dusk/64/ffffff/copy.png"
           style={{
+            cursor: "pointer",
             height: "30px",
             margin: "1.2rem",
             backgroundColor: `${primaryColor}`,
@@ -56,7 +57,8 @@ export default function PairCards({
             margin: "1.2rem",
             backgroundColor: `${secondaryColor}`,
             borderRadius: "50%",
-            padding: "10px"
+            padding: "10px",
+            cursor: "pointer"
           }}
           alt="copy"
         />

@@ -48,7 +48,7 @@ export default function Card({
         <img
           onClick={() => generateCSS("heading")}
           src="https://img.icons8.com/officexs/16/ffffff/copy-2.png"
-          style={{ width: "20px" }}
+          style={{ width: "20px", cursor: "pointer" }}
           alt="copy"
         />
       </div>
@@ -69,7 +69,7 @@ export default function Card({
         <img
           onClick={() => copyToClipboard("test")}
           src="https://img.icons8.com/officexs/16/ffffff/copy-2.png"
-          style={{ width: "20px" }}
+          style={{ width: "20px", cursor: "pointer" }}
           alt="copy"
         />
       </div>
@@ -86,7 +86,7 @@ export default function Card({
         <img
           onClick={() => copyToClipboard("test")}
           src="https://img.icons8.com/officexs/16/ffffff/copy-2.png"
-          style={{ width: "20px", color: "white" }}
+          style={{ width: "20px", cursor: "pointer" }}
           alt="copy"
         />
       </div>
