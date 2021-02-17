@@ -1,3 +1,7 @@
+.card {
+  transition: ease 2s;
+}
+
 @media only screen and (max-width: 800px) {
   .main-container {
     display: block !important;
@@ -5,6 +9,6 @@
   }
 
   .card {
-    margin: 2rem 0 !important;
+    margin: 1rem 0 !important;
   }
 }
