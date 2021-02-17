@@ -1,5 +1,6 @@
 import React from "react";
 import { copyToClipboard } from "./PairCards";
+import "./fonts.css";
 
 export default function Card({
   color,
@@ -21,6 +22,7 @@ export default function Card({
   }
   return (
     <div
+      className="card"
       style={{
         textAlign: "left",
         margin: "4rem",
@@ -39,7 +41,7 @@ export default function Card({
           alignItems: "center"
         }}
       >
-        <h1 style={{ marginRight: "0.4rem", fontFamiy: `${headingFont}` }}>
+        <h1 style={{ marginRight: "0.4rem", fontFamily: `${headingFont}` }}>
           {" "}
           Nice Headline Here
         </h1>
@@ -58,7 +60,7 @@ export default function Card({
           alignItems: "center"
         }}
       >
-        <p style={{ fontFamiy: `${paragraphFont}` }}>
+        <p style={{ fontFamily: `${paragraphFont}` }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -78,7 +80,7 @@ export default function Card({
           alignItems: "center"
         }}
       >
-        <h5 style={{ fontFamiy: `${paragraphFont}` }}>
+        <h5 style={{ fontFamily: `${paragraphFont}` }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting...
         </h5>
         <img

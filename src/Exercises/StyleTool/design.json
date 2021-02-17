@@ -2,32 +2,36 @@
   {
     "primaryColor": "#02343F",
     "secondaryColor": "#F0EDCC",
-    "headingFont": "'Lora', serif",
-    "paragraphFont": "'Merriweather', serif",
+    "headingFont": "Lora, serif",
+    "paragraphFont": "Merriweather, serif",
     "importURL": "@import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap');"
   },
   {
     "primaryColor": "#331B3F",
     "secondaryColor": "#ACC7B4",
-    "headingFont": "",
-    "paragraphFont": ""
+    "headingFont": "Open Sans, sans-serif",
+    "paragraphFont": "Proza Libre, sans-serif",
+    "importURL": "@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:ital@1&display=swap');"
   },
   {
     "primaryColor": "#0A174E",
     "secondaryColor": "#F5D042",
-    "headingFont": "",
-    "paragraphFont": ""
+    "headingFont": "Libre Baskerville, serif",
+    "paragraphFont": "Source Sans Pro, sans-serif",
+    "importURL": "@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&display=swap');"
   },
   {
     "primaryColor": "#07553B",
     "secondaryColor": "#CED46A",
-    "headingFont": "",
-    "paragraphFont": ""
+    "headingFont": "Karla, sans-serif",
+    "paragraphFont": "Rubik, sans-serif",
+    "importURL": "@import url('https://fonts.googleapis.com/css2?family=Karla&family=Rubik&display=swap');"
   },
   {
     "primaryColor": "#50586C",
     "secondaryColor": "#DCE2F0",
-    "headingFont": "",
-    "paragraphFont": ""
+    "headingFont": "Domine, serif",
+    "paragraphFont": "Source Sans Pro, sans-serif",
+    "importURL": "@import url('https://fonts.googleapis.com/css2?family=Domine:wght@500&family=Roboto&display=swap');"
   }
 ]

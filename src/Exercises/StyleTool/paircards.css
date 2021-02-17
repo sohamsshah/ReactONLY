@@ -1,0 +1,10 @@
+@media only screen and (max-width: 800px) {
+  .main-container {
+    display: block !important;
+    padding: 0;
+  }
+
+  .card {
+    margin: 2rem 0 !important;
+  }
+}

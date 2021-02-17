@@ -1,4 +1,5 @@
 import Card from "./Card";
+import "./paircards.css";
 
 export function copyToClipboard(text) {
   var textArea = document.createElement("textarea");
@@ -33,16 +34,17 @@ export default function PairCards({
         paragraphFont={paragraphFont}
         importURL={importURL}
       />
+
       <div>
         <img
           onClick={() => copyToClipboard(primaryColor)}
           src="https://img.icons8.com/dusk/64/ffffff/copy.png"
           style={{
             height: "30px",
-            marginBottom: "1.2rem",
+            margin: "1.2rem",
             backgroundColor: `${primaryColor}`,
             borderRadius: "50%",
-            padding: "20%"
+            padding: "10px"
           }}
           alt="copy"
         />
@@ -51,10 +53,10 @@ export default function PairCards({
           src="https://img.icons8.com/dusk/64/ffffff/copy.png"
           style={{
             height: "30px",
-            marginBottom: "1.2rem",
+            margin: "1.2rem",
             backgroundColor: `${secondaryColor}`,
             borderRadius: "50%",
-            padding: "20%"
+            padding: "10px"
           }}
           alt="copy"
         />
