@@ -11,11 +11,13 @@ import FontManipulation from "./Exercises/FontManipulation";
 import DesignerTool from "./Exercises/StyleTool/DesignerTool";
 import AddToCart from "./Exercises/AddToCart/AddToCart";
 import ToDo from "./Exercises/ToDoList/ToDo";
+import SwitchTabs from "./Exercises/SwitchTabs/SwitchTabs";
+import DarkMode from "./Exercises/DarkMode";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <ToDo />
+    <DarkMode />
   </StrictMode>,
   rootElement
 );
