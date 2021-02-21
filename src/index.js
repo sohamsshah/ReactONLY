@@ -11,14 +11,13 @@ import FontManipulation from "./Exercises/FontManipulation/FontManipulation";
 import DesignerTool from "./Exercises/StyleTool/DesignerTool";
 import AddToCart from "./Exercises/AddToCart/AddToCart";
 import ToDo from "./Exercises/ToDoList/ToDo";
-import SwitchTabs from "./Exercises/SwitchTabs/SwitchTabs";
 import DarkMode from "./Exercises/DarkMode/DarkMode";
 import Dropdown from "./Exercises/Dropdown/Dropdown";
-
+import SwitchTabs from "./Exercises/SwitchTabs/SwitchTabs";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <PasswordMatch />
+    <ToDo />
   </StrictMode>,
   rootElement
 );

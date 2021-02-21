@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 
-const itemsArr = ["Milk", "Tea", "Coffee", "Green Tea"];
 export default function AddToCart() {
   const [items, setItems] = useState({
     Milk: 0,
@@ -9,6 +8,8 @@ export default function AddToCart() {
     Coffee: 0,
     "Green Tea": 0
   });
+  const itemsArr = ["Milk", "Tea", "Coffee", "Green Tea"];
+
   function totalCartItems(obj) {
     let total = 0;
     for (let item in obj) {
