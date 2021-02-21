@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "../styles.css";
+import "../../styles.css";
 
 const fontDictionary = {
   "Bree Serif": "Bree Serif, serif",
@@ -13,29 +13,19 @@ export default function FontManipulation() {
   const [size, setSize] = useState(8);
   const [font, setFont] = useState("Bree Serif");
 
-  function alterSize(size) {
-    document.querySelector(".text").style.fontSize = `${size}px`;
-  }
-
   function incrementSize() {
     if (size + 8 < 100) {
       setSize(size + 8);
-      alterSize(size);
     }
   }
   function decrementSize() {
     if (size - 8 > 8) {
       setSize(size - 8);
-      alterSize(size);
     }
   }
 
-  function alterFont() {
-    setFont(document.getElementById("fonts").value);
-  }
-
-  function transitionAnimation() {
-    document.querySelector(".text").style.transition = `fade 0.8s`;
+  function alterFont(x) {
+    setFont(x.target.value);
   }
 
   return (
@@ -44,7 +34,7 @@ export default function FontManipulation() {
         +
       </button>{" "}
       <button onClick={decrementSize} className="decrement">
-        -{console.log(size)}
+        -
       </button>{" "}
       <select onChange={alterFont} name="fonts" id="fonts">
         <option value="Bree Serif">Bree Serif</option>
@@ -53,9 +43,12 @@ export default function FontManipulation() {
         <option value="Poppins">Poppins</option>
       </select>
       <h1
-        style={{ fontSize: `${size}px`, fontFamily: fontDictionary[font] }}
+        style={{
+          fontSize: `${size}px`,
+          fontFamily: fontDictionary[font],
+          transition: "0.2s"
+        }}
         className="text"
-        onChange={transitionAnimation}
       >
         {" "}
         Soham

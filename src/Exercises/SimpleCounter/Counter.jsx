@@ -1,4 +1,4 @@
-import "./../styles.css";
+import "./../../styles.css";
 import React from "react";
 // import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useState } from "react";
@@ -13,8 +13,9 @@ export default function Counter() {
   }
   return (
     <div className="App">
+      <h1> Simple Counter </h1>
       <button onClick={increment}>+</button>
-      <span>{counter}</span>
+      <span style={{ padding: "1rem" }}>{counter}</span>
       <button onClick={decrement}>-</button>
     </div>
   );

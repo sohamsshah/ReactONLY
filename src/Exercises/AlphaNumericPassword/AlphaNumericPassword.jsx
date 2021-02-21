@@ -1,31 +1,25 @@
 import React from "react";
 import { useState } from "react";
-import "../styles.css";
+import "./../../styles.css";
 
 export default function AlphaNumericPassword() {
   const [isAlphaNumeric, setisAlphaNumeric] = useState(false);
 
-  function checkAlphaNumeric() {
+  function checkAlphaNumeric(x) {
     let Exp = /^[a-zA-Z0-9]+$/;
-    setisAlphaNumeric(
-      document.querySelector(".password").value.match(Exp) !== null
-        ? true
-        : false
-    );
+    setisAlphaNumeric(x.target.value.match(Exp) !== null ? true : false);
   }
   return (
     <div className="App">
-      <h1> Password Matcher </h1>
+      <h1> AlphaNumeric Password </h1>
       <div>
         <input
           type="password"
           className="password"
           placeholder="Enter Password"
+          onChange={(x) => checkAlphaNumeric(x)}
         ></input>
       </div>
-      <button onClick={checkAlphaNumeric} className="check">
-        Check
-      </button>
       <div>{isAlphaNumeric ? "Yes" : "No"}</div>
     </div>
   );
