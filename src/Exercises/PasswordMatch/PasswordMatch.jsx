@@ -3,13 +3,10 @@ import "../styles.css";
 import { useState } from "react";
 
 export default function PasswordMatch() {
+  const [password, setPassword] = useState("");
   const [isMatch, setIsMatch] = useState(false);
-
-  function isPasswordMatch() {
-    setIsMatch(
-      document.querySelector(".password").value ===
-        document.querySelector(".confirm").value
-    );
+  function matchPasswords(x) {
+    setIsMatch(password === x.target.value);
   }
   return (
     <div className="App">
@@ -18,6 +15,7 @@ export default function PasswordMatch() {
           className="password"
           type="text"
           placeholder="Enter Password"
+          onChange={(x) => setPassword(x.target.value)}
         ></input>
       </div>
 
@@ -26,10 +24,9 @@ export default function PasswordMatch() {
           className="confirm"
           type="text"
           placeholder="Confirm Password"
+          onChange={(x) => matchPasswords(x)}
         ></input>
       </div>
-
-      <button onClick={isPasswordMatch}>Verify</button>
       <div>{isMatch ? "Password Match" : "Password Didnt Match"}</div>
     </div>
   );
