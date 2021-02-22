@@ -15,11 +15,12 @@ import DarkMode from "./Exercises/DarkMode/DarkMode";
 import Dropdown from "./Exercises/Dropdown/Dropdown";
 import SwitchTabs from "./Exercises/SwitchTabs/SwitchTabs";
 import LikeInAList from "./Exercises/LikeInAList/LikeInAList";
+import Toast from "./Exercises/Toast/Toast";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <LikeInAList />
+    <Toast />
   </StrictMode>,
   rootElement
 );
