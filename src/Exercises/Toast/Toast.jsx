@@ -2,6 +2,29 @@ import React from "react";
 import { useState } from "react";
 import "./../../styles.css";
 
+function Card({ handleIsShown, type }) {
+  const themes = {
+    error: { backgroundColor: "red", text: "Danger!", color: "white" },
+    success: { backgroundColor: "green", text: "Success!", color: "white" },
+    warning: { backgroundColor: "yellow", text: "Warning!", color: "black" }
+  };
+  return (
+    <div
+      style={{
+        backgroundColor: themes[type].backgroundColor,
+        width: "300px",
+        height: "50px",
+        margin: "1rem auto",
+        padding: "1.5rem 0rem",
+        color: themes[type].color
+      }}
+    >
+      <button onClick={() => handleIsShown("hide")}>Hide </button>
+      <p>{themes[type].text}</p>
+    </div>
+  );
+}
+
 export default function Toast() {
   const [isShown, setIsShown] = useState(false);
   function handleIsShown(op) {
@@ -17,19 +40,7 @@ export default function Toast() {
       <div>
         <button onClick={() => handleIsShown("show")}> Submit </button>
         {isShown ? (
-          <div
-            style={{
-              backgroundColor: "#eee",
-              width: "300px",
-              height: "50px",
-              margin: "1rem auto",
-              padding: "1.5rem 0rem",
-              transition: "0.6s"
-            }}
-          >
-            <button onClick={() => handleIsShown("hide")}>Hide </button>
-            <p>Message Sent!</p>
-          </div>
+          <Card type="success" handleIsShown={handleIsShown} />
         ) : (
           <div> </div>
         )}
