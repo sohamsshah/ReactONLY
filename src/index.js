@@ -14,10 +14,12 @@ import ToDo from "./Exercises/ToDoList/ToDo";
 import DarkMode from "./Exercises/DarkMode/DarkMode";
 import Dropdown from "./Exercises/Dropdown/Dropdown";
 import SwitchTabs from "./Exercises/SwitchTabs/SwitchTabs";
+import LikeInAList from "./Exercises/LikeInAList/LikeInAList";
+
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <ToDo />
+    <LikeInAList />
   </StrictMode>,
   rootElement
 );
