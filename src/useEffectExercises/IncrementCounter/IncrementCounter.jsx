@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import useDocumentTitle from "./useDocumentTitle";
 
 export default function IncrementCounter() {
   const [counter, setCounter] = useState(0);
@@ -7,9 +8,10 @@ export default function IncrementCounter() {
     setCounter((counter) => {
       return counter + 1;
     });
+
     console.log("from click handler", counter);
   }
-
+  useDocumentTitle(counter);
   useEffect(() => {
     console.log("from use Effect", counter);
   });
