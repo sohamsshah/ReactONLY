@@ -6,10 +6,14 @@ export default function App() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   async function clickhandler() {
-    setLoading(true);
-    const response = await axios.get("/api/users");
-    setData(response.data.users);
-    setLoading(false);
+    try {
+      setLoading(true);
+      const response = await axios.get("/api/users");
+      setData(response.data.users);
+      setLoading(false);
+    } catch (error) {
+      console.error("error occured", error);
+    }
   }
   return (
     <div className="App">
