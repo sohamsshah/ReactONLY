@@ -1,7 +1,7 @@
 {
   "name": "reactonly",
   "version": "1.0.0",
-  "description": "React Scripts for quick concept recap.",
+  "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
