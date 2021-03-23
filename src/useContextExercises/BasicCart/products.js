@@ -1,8 +1,4 @@
-import { createContext } from "react";
-
-export const CartContext = createContext();
-
-const itemsInCart = [
+export const products = [
   {
     id: 1,
     name: "kala chasma",
@@ -29,11 +25,3 @@ const itemsInCart = [
     price: 10000
   }
 ];
-
-export function CartProvider({ children }) {
-  return (
-    <CartContext.Provider value={{ itemsInCart }}>
-      {children}
-    </CartContext.Provider>
-  );
-}
